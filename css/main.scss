@@ -1,0 +1,530 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html, body {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+.size {
+	width: 80%;
+	height: 100%;
+}
+
+.f-col {
+	display: flex;
+	flex-direction: column;
+}
+
+.f-row {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Header */
+
+
+
+.header {
+	height: 1250px;
+	min-height: 1250px;
+	width: 100%;
+	background: transparent;
+	justify-content: center;
+	background: url("../img/bg1.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 0%;
+	background-size: cover;
+}
+
+.logo {
+	width: 540px;
+	height: 330px;
+	background: url("../img/logo2.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: 50% 50%;
+}
+
+.header__top {
+	min-height: 300px;
+	background: transparent;
+	position: relative;
+	justify-content: center;
+	padding-top: 30px;
+}
+
+.header__mid {
+	justify-content: space-between;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.header__bot {
+	justify-content: space-between;
+}
+
+.item {
+	position: relative;
+	justify-content: center;
+
+	img {
+		width: 300px;
+	}
+
+	&__top:before {
+		content: 'TOP';
+		color: #e7a41a;
+		position: absolute;
+		font-size: 20px;
+		font-family: "Geometria", sans-serif;
+		font-weight: 500;
+		transform: rotate(48deg);
+		top: 8%;
+		left: 55%;
+	}
+
+	&__underline {
+		top: -120px;
+	}
+}
+
+.suit {
+	width: 140px;
+	height: 140px;
+
+	&__mid {
+		position: absolute;
+	}
+
+	&__first {
+		background: url('../img/item1.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+		left: 15%;
+		top: 55%;
+	}
+
+	&__second {
+		background: url('../img/item2.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+		left: 15%;
+		top: 55%;
+	}
+
+	&__third {
+		background: url('../img/item3.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+		left: 15%;
+		top: 55%;
+	}
+
+	&__fourth {
+		background: url('../img/item4.png');
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+		left: 15%;
+		top: 55%;
+	}
+}
+
+.headline {
+	font-size: 30px;
+	color: #e7a41a;
+	font-family: "Geometria", sans-serif;
+	font-weight: 500;
+	text-transform: uppercase;
+	text-shadow: 0px 0px 15px #e7a41a;
+}
+
+.bot__container {
+	align-items: center;
+	position: relative;
+	min-width: 300px;
+	width: 32%;
+	max-width: 400px;
+
+	.headline {
+		margin-bottom: 30px;
+	}
+
+	&.container__down {
+		top: 40px;
+	}
+}
+
+.range {
+	width: 100%;
+	height: 325px;
+
+
+	&__half {
+		height: 50%;
+		width: 100%;
+	}
+
+	&__img {
+		flex: 1;
+		overflow: hidden;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	&__first {
+		border-right: 1px solid #e7a41a;
+		border-bottom: 1px solid #e7a41a;
+	}
+
+	&__second {
+		border-left: 1px solid #e7a41a;
+		border-bottom: 1px solid #e7a41a;
+	}
+
+	&__third {
+		border-right: 1px solid #e7a41a;
+		border-top: 1px solid #e7a41a;
+	}
+
+	&__fourth {
+		border-left: 1px solid #e7a41a;
+		border-top: 1px solid #e7a41a;
+	}
+}
+
+/* Section 1 */
+
+section {
+	width: 100%;
+}
+
+.s1 {
+	min-height: 1250px;
+	background-color: black;
+	background-image: url("../img/bg2.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 20%;
+	justify-content: center;
+
+	.size {
+		height: 100%;
+		padding-top: 30px;
+		align-items: center;
+	}
+
+	&__headline {
+		font-size: 36px;
+		position: relative;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	&__headline:after {
+		content: '';
+		background: url("../img/dice.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		width: 100px;
+		height: 90px;
+		position: absolute;
+		right: -100px;
+	}
+}
+
+.casino {
+	padding: 50px 0px 20px 0px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.option {
+	align-items: center;
+	padding-bottom: 80px;
+}
+
+.option__item {
+	width: 320px;
+	height: 385px;
+	position: relative;
+}
+
+.option__text {
+	font-size: 18px;
+	font-family: "Geometria", sans-serif;
+	font-weight: 500;
+	color: #e7a41a;
+	margin-top: -30px;
+}
+
+.option__first {
+	background: url("../img/casino.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;	
+}
+
+.option__second {
+	background: url("../img/casino2.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;	
+}
+
+.option__third {
+	background: url("../img/casino3.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;	
+}
+
+/* Рейтинг казино */
+
+.option__item {
+
+	&.ten:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/ten.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.nine:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/nine.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.eight:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/eight.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.seven:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/seven.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.six:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/six.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.five:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/five.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.four:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/four.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.three:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/three.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.two:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/two.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+
+	&.one:before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100px;
+		top: -30px;
+		background: url("../img/rating/one.png");
+		background-repeat: no-repeat;
+		background-position: 50% 50%;
+		background-size: contain;
+	}
+}
+
+/* Секция 2 */
+
+.s2 {
+	justify-content: center;
+	background: black;
+	padding-bottom: 70px;
+
+	.wrapper {
+		justify-content: space-between;
+	}
+
+	&__text {
+		color: #fff;
+		font-family: "Geometria", sans-serif;
+		font-size: 16px;
+		font-weight: 300;
+	}
+}
+
+.line {
+	height: 8px;
+	border-radius: 5px;
+	background: #e7bb1a;
+	margin-bottom: 40px;
+}
+
+.long-line {
+	width: 88%;
+}
+
+.short-line {
+	width: 10%;
+}
+
+/* Подвал */
+
+.footer {
+	width: 100%;
+	height: 75px;
+	justify-content: center;
+	align-items: center;
+	background: #131316;
+
+	.size {
+		justify-content: space-between;
+	}
+}
+
+.copyright {
+	align-items: center;
+}
+
+.copyright__text {
+	font-size: 14px;
+	color: #fff;
+	font-weight: 300;
+	font-family: "Geometria", sans-serif;
+}
+
+.navigation {
+	align-items: center;
+	a {
+		font-size: 14px;
+		color: #fff;
+		font-weight: 300;
+		font-family: "Geometria", sans-serif;
+		transition: 0.3s;
+		margin-right: 40px;
+	}
+
+	a:hover {
+		color: #e7a41a;
+	}
+}
+
+/* Социальные кнопки */
+
+.social {
+	align-items: center;
+}
+
+.icon {
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 50%;
+}
+
+
+
+.vk {
+	background-image: url("../img/vk.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}
+
+.fb {
+	background: url("../img/fb.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	margin-left: -4px;
+	margin-right: -5px;
+}
+
+.tw {
+	background: url("../img/tw.png");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+}

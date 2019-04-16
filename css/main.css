@@ -1,0 +1,478 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+html, body {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a {
+  text-decoration: none; }
+
+.size {
+  width: 80%;
+  height: 100%; }
+
+.f-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.f-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+/* Header */
+.header {
+  height: 1250px;
+  min-height: 1250px;
+  width: 100%;
+  background: transparent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../img/bg1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  background-size: cover; }
+
+.logo {
+  width: 540px;
+  height: 330px;
+  background: url("../img/logo2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%; }
+
+.header__top {
+  min-height: 300px;
+  background: transparent;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 30px; }
+
+.header__mid {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px; }
+
+.header__bot {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.item {
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .item img {
+    width: 300px; }
+  .item__top:before {
+    content: 'TOP';
+    color: #e7a41a;
+    position: absolute;
+    font-size: 20px;
+    font-family: "Geometria", sans-serif;
+    font-weight: 500;
+    -webkit-transform: rotate(48deg);
+            transform: rotate(48deg);
+    top: 8%;
+    left: 55%; }
+  .item__underline {
+    top: -120px; }
+
+.suit {
+  width: 140px;
+  height: 140px; }
+  .suit__mid {
+    position: absolute; }
+  .suit__first {
+    background: url("../img/item1.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    left: 15%;
+    top: 55%; }
+  .suit__second {
+    background: url("../img/item2.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    left: 15%;
+    top: 55%; }
+  .suit__third {
+    background: url("../img/item3.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    left: 15%;
+    top: 55%; }
+  .suit__fourth {
+    background: url("../img/item4.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    left: 15%;
+    top: 55%; }
+
+.headline {
+  font-size: 30px;
+  color: #e7a41a;
+  font-family: "Geometria", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 15px #e7a41a; }
+
+.bot__container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  min-width: 300px;
+  width: 32%;
+  max-width: 400px; }
+  .bot__container .headline {
+    margin-bottom: 30px; }
+  .bot__container.container__down {
+    top: 40px; }
+
+.range {
+  width: 100%;
+  height: 325px; }
+  .range__half {
+    height: 50%;
+    width: 100%; }
+  .range__img {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .range__first {
+    border-right: 1px solid #e7a41a;
+    border-bottom: 1px solid #e7a41a; }
+  .range__second {
+    border-left: 1px solid #e7a41a;
+    border-bottom: 1px solid #e7a41a; }
+  .range__third {
+    border-right: 1px solid #e7a41a;
+    border-top: 1px solid #e7a41a; }
+  .range__fourth {
+    border-left: 1px solid #e7a41a;
+    border-top: 1px solid #e7a41a; }
+
+/* Section 1 */
+section {
+  width: 100%; }
+
+.s1 {
+  min-height: 1250px;
+  background-color: black;
+  background-image: url("../img/bg2.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 20%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .s1 .size {
+    height: 100%;
+    padding-top: 30px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .s1__headline {
+    font-size: 36px;
+    position: relative;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 40px; }
+  .s1__headline:after {
+    content: '';
+    background: url("../img/dice.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 100px;
+    height: 90px;
+    position: absolute;
+    right: -100px; }
+
+.casino {
+  padding: 50px 0px 20px 0px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.option {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 80px; }
+
+.option__item {
+  width: 320px;
+  height: 385px;
+  position: relative; }
+
+.option__text {
+  font-size: 18px;
+  font-family: "Geometria", sans-serif;
+  font-weight: 500;
+  color: #e7a41a;
+  margin-top: -30px; }
+
+.option__first {
+  background: url("../img/casino.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+.option__second {
+  background: url("../img/casino2.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+.option__third {
+  background: url("../img/casino3.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+/* Рейтинг казино */
+.option__item.ten:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/ten.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.nine:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/nine.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.eight:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/eight.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.seven:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/seven.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.six:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/six.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.five:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/five.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.four:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/four.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.three:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/three.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.two:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/two.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+.option__item.one:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: -30px;
+  background: url("../img/rating/one.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+/* Секция 2 */
+.s2 {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: black;
+  padding-bottom: 70px; }
+  .s2 .wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .s2__text {
+    color: #fff;
+    font-family: "Geometria", sans-serif;
+    font-size: 16px;
+    font-weight: 300; }
+
+.line {
+  height: 8px;
+  border-radius: 5px;
+  background: #e7bb1a;
+  margin-bottom: 40px; }
+
+.long-line {
+  width: 88%; }
+
+.short-line {
+  width: 10%; }
+
+/* Подвал */
+.footer {
+  width: 100%;
+  height: 75px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #131316; }
+  .footer .size {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+
+.copyright {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.copyright__text {
+  font-size: 14px;
+  color: #fff;
+  font-weight: 300;
+  font-family: "Geometria", sans-serif; }
+
+.navigation {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .navigation a {
+    font-size: 14px;
+    color: #fff;
+    font-weight: 300;
+    font-family: "Geometria", sans-serif;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-right: 40px; }
+  .navigation a:hover {
+    color: #e7a41a; }
+
+/* Социальные кнопки */
+.social {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.icon {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 50%; }
+
+.vk {
+  background-image: url("../img/vk.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+.fb {
+  background: url("../img/fb.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain;
+  margin-left: -4px;
+  margin-right: -5px; }
+
+.tw {
+  background: url("../img/tw.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: contain; }
+
+/*# sourceMappingURL=main.css.map */
